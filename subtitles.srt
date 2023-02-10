@@ -1,0 +1,324 @@
+1
+00:00:00,0 --> 00:00:03,0
+ Hey, Flanders, when are your busy hours?
+
+2
+00:00:03,0 --> 00:00:06,0
+ Oh, I expect things to start picking up soon.
+
+3
+00:00:06,0 --> 00:00:09,0
+ I think word of mouth is starting to spread.
+
+4
+00:00:09,0 --> 00:00:12,0
+ Hey, I hear you validate parking tickets without purchase.
+
+5
+00:00:12,0 --> 00:00:16,0
+ Oh, right is rain. Or as we say around here, left is rain.
+
+6
+00:00:16,0 --> 00:00:17,0
+ Just stamp the ticket.
+
+7
+00:00:17,0 --> 00:00:19,0
+ Oh, okay.
+
+8
+00:00:22,0 --> 00:00:25,0
+ Hello, Governor. Lube job while you white?
+
+9
+00:00:25,0 --> 00:00:27,0
+ Don't touch me.
+
+10
+00:00:27,0 --> 00:00:30,0
+ 20% off at Lullabies.
+
+11
+00:00:30,0 --> 00:00:32,0
+ This tall and big baby sent you.
+
+12
+00:00:32,0 --> 00:00:35,0
+ I know you can hear me. I'm talking to you.
+
+13
+00:00:35,0 --> 00:00:37,0
+ You sicken me.
+
+14
+00:00:37,0 --> 00:00:43,0
+ Your teenage son or daughter will think this wishbone necklace is really cool.
+
+15
+00:00:43,0 --> 00:00:45,0
+ I doubt my son or daughter is that stupid.
+
+16
+00:00:45,0 --> 00:00:47,0
+ No.
+
+17
+00:00:51,0 --> 00:00:53,0
+ I need one 29-cent stamp.
+
+18
+00:00:53,0 --> 00:00:55,0
+ That's $1.85.
+
+19
+00:00:55,0 --> 00:00:57,0
+ I want $2 worth of gas, please.
+
+20
+00:00:57,0 --> 00:00:59,0
+ How much is your petty candy?
+
+21
+00:00:59,0 --> 00:01:01,0
+ Surprisingly expensive.
+
+22
+00:01:01,0 --> 00:01:03,0
+ What a ripoff.
+
+23
+00:01:03,0 --> 00:01:05,0
+ This is what I think of your store.
+
+24
+00:01:05,0 --> 00:01:09,0
+ You're a jerk.
+
+25
+00:01:21,0 --> 00:01:25,0
+ I did it. Second in line and all I had to do was miss eight days of work.
+
+26
+00:01:25,0 --> 00:01:28,0
+ With the money you would have made working, you could have bought tickets from a scalper.
+
+27
+00:01:28,0 --> 00:01:30,0
+ In theory, yes. Jerk.
+
+28
+00:01:30,0 --> 00:01:35,0
+ The shine on my shoulders makes me happy.
+
+29
+00:01:39,0 --> 00:01:41,0
+ Sir, hello, sir.
+
+30
+00:01:41,0 --> 00:01:45,0
+ Yes, you look like a man who needs help satisfying his wife.
+
+31
+00:01:51,0 --> 00:01:53,0
+ Who controls the British crown?
+
+32
+00:01:53,0 --> 00:01:55,0
+ Who keeps the metric system down?
+
+33
+00:01:55,0 --> 00:01:57,0
+ We do.
+
+34
+00:01:57,0 --> 00:01:59,0
+ We do.
+
+35
+00:01:59,0 --> 00:02:01,0
+ Who links Atlantis off the maps?
+
+36
+00:02:01,0 --> 00:02:03,0
+ Who keeps the Martians under wraps?
+
+37
+00:02:03,0 --> 00:02:05,0
+ We do.
+
+38
+00:02:05,0 --> 00:02:07,0
+ We do.
+
+39
+00:02:07,0 --> 00:02:11,0
+ Who holds back the electric car?
+
+40
+00:02:11,0 --> 00:02:15,0
+ Who makes the Gutenberg a sark?
+
+41
+00:02:15,0 --> 00:02:17,0
+ We do.
+
+42
+00:02:17,0 --> 00:02:19,0
+ We do.
+
+43
+00:02:19,0 --> 00:02:22,0
+ Who robscape fish of their sight?
+
+44
+00:02:22,0 --> 00:02:24,0
+ Who rigs every Oscar night?
+
+45
+00:02:24,0 --> 00:02:26,0
+ We do.
+
+46
+00:02:26,0 --> 00:02:28,0
+ We do.
+
+47
+00:02:28,0 --> 00:02:30,0
+ We do.
+
+48
+00:02:32,0 --> 00:02:34,0
+ Thank you.
+
+49
+00:02:34,0 --> 00:02:42,0
+ And as a final humiliation, you must walk home naked, dragging behind you the stone of shame.
+
+50
+00:02:51,0 --> 00:02:53,0
+ The mark.
+
+51
+00:02:53,0 --> 00:02:57,0
+ Oh, there. It's just a birthmark, and I'll thank you not to stare.
+
+52
+00:02:57,0 --> 00:03:00,0
+ He's the chosen one.
+
+53
+00:03:02,0 --> 00:03:09,0
+ You are the chosen one, whom the sacred parchment prophesied would lead us to glory.
+
+54
+00:03:09,0 --> 00:03:16,0
+ Now, to the top of Mount Springfield for the coronation, remove the stone of shame.
+
+55
+00:03:16,0 --> 00:03:17,0
+ Woohoo!
+
+56
+00:03:17,0 --> 00:03:20,0
+ Attach the stone of triumph.
+
+57
+00:03:20,0 --> 00:03:22,0
+ Oh!
+
+58
+00:03:22,0 --> 00:03:24,0
+ Yay!
+
+59
+00:03:29,0 --> 00:03:31,0
+ Here, let me gift wrap that for you.
+
+60
+00:03:31,0 --> 00:03:33,0
+ Mind if I tidy you up a bit while you wait?
+
+61
+00:03:33,0 --> 00:03:36,0
+ Help yourself to a piece of candy from that bowl.
+
+62
+00:03:36,0 --> 00:03:37,0
+ I'll just comb your hair.
+
+63
+00:03:37,0 --> 00:03:38,0
+ Stop it, stop it.
+
+64
+00:03:38,0 --> 00:03:42,0
+ Cancel my purchase. I'll just learn to be right-handed.
+
+65
+00:03:42,0 --> 00:03:45,0
+ Sorry, I drove him away.
+
+66
+00:03:45,0 --> 00:03:51,0
+ No, it was me. I don't give anyone a moment's peace. I'm a monster.
+
+67
+00:03:51,0 --> 00:03:56,0
+ Why don't we start out with some questions from the audience? Yes, yes, you, sir.
+
+68
+00:03:56,0 --> 00:03:59,0
+ Yeah, why does this show feel like it's 20 years out of date?
+
+69
+00:03:59,0 --> 00:04:04,0
+ Because...wait, could you repeat that?
+
+70
+00:04:04,0 --> 00:04:22,0
+ Yes, I said I love the show and so does my family. And camera three.
+
+71
+00:04:22,0 --> 00:04:29,0
+ Come back, come back! Willie still loves you, oh great one!
+
+72
+00:04:29,0 --> 00:04:32,0
+ Just fill out this form and you're on your way to the reserve.
+
+73
+00:04:32,0 --> 00:04:34,0
+ There's a question that's crossed out.
+
+74
+00:04:34,0 --> 00:04:38,0
+ Well, due to a recent presidential order, we're not allowed to ask that particular question.
+
+75
+00:04:38,0 --> 00:04:41,0
+ Well I think I can make it out. Are you a homosexual...
+
+76
+00:04:41,0 --> 00:04:44,0
+ For God's sake, don't answer that. I could go to jail.
+
+77
+00:04:44,0 --> 00:04:46,0
+ But I'm not a homosexual...
+
+78
+00:04:46,0 --> 00:04:49,0
+ La la la la la, I am not listening, la la la la la la la la la la.
+
+79
+00:04:49,0 --> 00:04:54,0
+ Nice fella. I wonder if he's gay.
+
+80
+00:04:54,0 --> 00:04:58,0
+ Hey everybody look! Herman Tim's area is back!
+
+81
+00:04:58,0 --> 00:05:13,0
+ You idiots! She meant we should disperse!
+

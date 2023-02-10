@@ -11,22 +11,51 @@ import os
 import whisper
 import time
 import tkinter as tk
+import json
+import glob
+import torch
+    
 
-import tkinter as tk
 
 def checkbox_status():
     youtube_link = input_text.get()
-    checkbox1_status = checkbox1.get()    
+    checkbox1_status = checkbox1.get()
+    checkbox2_status = checkbox2.get()
+    checkbox3_status = checkbox3.get()
+    #Get status of dropdown menu
+    selected_value_status = selected_value.get()
+    print("Selected value:", selected_value_status)
     print("YouTube Link:", youtube_link)
     print("Checkbox 1:", checkbox1_status)
     #if checkbox1_status == 1, download audio
     if checkbox1_status == 1:
         Download_audio(youtube_link)
         
-    else:
+    if checkbox2.get() == 1:
         Download_video(youtube_link)
+        
+    if checkbox3.get() == 1:
+        transcribe_audio(selected_value_status)
     
+def transcribe_audio(model_selection):
+    #convert model selection to lowercase
+    model_selection = model_selection.lower()
     
+    model = whisper.load_model(model_selection)
+    
+    #change directory to Audio
+    os.chdir('Audio')
+    
+    result = model.transcribe("audio.mp3")
+    #save result to a text file and go back to main directory
+    os.chdir('..')
+    with open("transcription.txt", "w") as f:
+        f.write(result['text'])
+    #save the whole dictionary to a json file
+    with open("transcription.json", "w") as f:
+        json.dump(result, f)
+    #create an srt file
+    create_srt_file()
 
 
 def Replace_spaces_with_underscores(string):
@@ -34,6 +63,23 @@ def Replace_spaces_with_underscores(string):
     string = string.replace(" ", "_")
     return string
 
+def create_srt_file():
+    with open("transcription.json", "r") as f:
+        data = json.load(f)
+    segments = data['segments']
+    count = 1
+    for segment in segments:
+        start_time = segment['start']
+        end_time = segment['end']
+        text = segment['text']
+        with open("subtitles.srt", "a") as f:
+            # Write the segment number, then the start and end times in correct SRT format
+            f.write(f"{count}\n")
+            f.write(f"{time.strftime('%H:%M:%S', time.gmtime(start_time))},{int((start_time - int(start_time)) * 1000)} --> {time.strftime('%H:%M:%S', time.gmtime(end_time))},{int((end_time - int(end_time)) * 1000)}\n")
+            # Write the text
+            f.write(f"{text}\n\n")
+            count += 1
+    
 
 def Download_video(link):
     # Create a folder named 'Videos', if there isn't one already
@@ -65,14 +111,15 @@ def Download_audio(link):
     youtubeObject = YouTube(link)
     
     try:
-        
+        #download the video
         youtubeObject.streams.filter(only_audio=True).first().download()
-        #rename the file and replace spaces with underscores
+        mp4_files = glob.glob('*.mp4')
         new_filename = "video.mp4"
-        os.rename(f'{youtubeObject.title}.mp4', new_filename)
+        
+        os.rename(f'{mp4_files[0]}', new_filename)
                 
-        #convert to mp3 named audio.mp3
-        mp3_string = "ffmpeg -i video.mp4 -ab 160k -ac 2 -ar 44100 -vn audio.mp3"
+        #convert to mp3 named audio.mp3 using the python os module
+        mp3_string = "ffmpeg -i video.mp4 audio.mp3"
         print(mp3_string)
         os.system(mp3_string)
         
@@ -118,6 +165,15 @@ if __name__ == "__main__":
     
     checkbox3_label = tk.Checkbutton(root, text="Transcribe?", variable=checkbox3)
     checkbox3_label.pack()
+    
+    #create a dropdown menu with 5 options that is greyed out until the user clicks checkbox3
+    selected_value = tk.StringVar()
+    dropdown = tk.OptionMenu(root, selected_value, "Tiny", "Base", "Small", "Medium", "Large")
+    dropdown.pack()
+    
+    
+    #create a submit button
+    
 
 
     submit_button = tk.Button(root, text="Submit", command=checkbox_status)
