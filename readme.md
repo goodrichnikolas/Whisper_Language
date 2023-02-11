@@ -1,5 +1,7 @@
 How to use:
 
+Run main.py
+
 Take the full YouTube link and paste it into the URL box.
 
 Check mark whether you want just the audio, video, or subtitles.
