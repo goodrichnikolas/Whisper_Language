@@ -14,7 +14,7 @@ import tkinter as tk
 import json
 import glob
 import torch
-    
+import shutil    
 
 
 def checkbox_status():
@@ -38,24 +38,21 @@ def checkbox_status():
         transcribe_audio(selected_value_status)
     
 def transcribe_audio(model_selection):
-    #convert model selection to lowercase
-    model_selection = model_selection.lower()
-    
-    model = whisper.load_model(model_selection)
+    #convert model to lowercase
+    model_selection = model_selection.lower()    
     
     #change directory to Audio
     os.chdir('Audio')
     
-    result = model.transcribe("audio.mp3")
+    cmd = f"whisper audio.mp3 --model {model_selection}.en"
+    os.system(cmd)
+    
     #save result to a text file and go back to main directory
     os.chdir('..')
-    with open("transcription.txt", "w") as f:
-        f.write(result['text'])
-    #save the whole dictionary to a json file
-    with open("transcription.json", "w") as f:
-        json.dump(result, f)
-    #create an srt file
-    create_srt_file()
+    
+    
+    #add srt to video
+    add_srt_to_video()
 
 
 def Replace_spaces_with_underscores(string):
@@ -128,17 +125,47 @@ def Download_audio(link):
         for file in os.listdir():
             if file.endswith(".mp4"):
                 os.remove(file)
-        
+      
         
     except:
         print("Download failed")
     print("Download complete")
     # return to the main directory
     os.chdir('..')
+    
 
-
+def add_srt_to_video():
+    #change directory to videos    
+    os.chdir('Videos')
+    
+    #copy audio.mp3.srt from the Audio folder to here
+    shutil.copy('../Audio/audio.mp3.srt', '.')
+    
+    #rename the file to subtitles.srt
+    new_filename = "subtitles.srt"
+    os.rename(f'audio.mp3.srt', new_filename)
+    
+    #use ffmpeg to add the subtitles to the video
+    ffmpeg_string = "ffmpeg -i video.mp4 -vf subtitles=subtitles.srt video_with_subtitles.mp4"
+    os.system(ffmpeg_string)
+            
+    #delete srt file
+    os.remove('subtitles.srt')
+    
+    #return to main directory
+    os.chdir('..')
     
 if __name__ == "__main__":
+    #delete the audio and video folders if they exist
+    if os.path.exists('Audio'):
+        shutil.rmtree('Audio')
+    if os.path.exists('Videos'):
+        shutil.rmtree('Videos')
+    #delete transcription.json, transcription.txt, and subtitles.srt if they exist
+    file_list = ['transcription.json', 'transcription.txt', 'subtitles.srt']
+    for file in file_list:
+        if os.path.exists(file):
+            os.remove(file)
     
     link = 'https://www.youtube.com/watch?v=xH9c_fehh9c'
     root = tk.Tk()
